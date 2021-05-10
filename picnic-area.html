@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunday Afternoon首頁</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="picnic-area.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <button class="nav-button" id="btn-hamburger"><i  class="fa fa-bars" aria-hidden="true"></i></button>
+        <div class="logo"><a href="index.html"><img src="img/nav/logo.png" alt=""></a></div>
+        <ul class="menu">
+          <a href="index.html"><img src="img/nav/logo.png" alt=""></a>
+          <div class="index-info">
+            <li><a href="picnic.html">野餐專區</a></li>
+            <li><a href="product.html">商品選購</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="about-us.html">關於我們</a></li>
+          </div>
+        </ul>
+  
+        <ul class="nav-icons">
+          
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div id="menu" class="hidden"> 
+        <div><a href="">野餐專區</a></div>
+        <div><a href="news.html">最新消息</a></div>
+        <div><a href="">商品選購</a></div>
+        <div><a href="">關於我們</a></div>
+      </div>
+    </nav>
+
+    <div class="banner-wrap">
+      <div class="banner">
+        <div class="banner-txt">
+          <p>輕鬆野餐趣!!</p>
+          <p>我們提供多種野餐籃、野餐墊的租借服務</p>
+          <p>輕鬆打造你的野餐風格</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="topic">
+        <div class="wave wave-left"><img src="img/news/wave.svg" alt=""></div>
+          <div class="topic-text">
+            <h1>PICNIC</h1>
+            <h2>野餐專區</h2>
+          </div> 
+        <div class="wave wave-right"><img src="img/news/wave.svg" alt=""></div>
+      </div>
+      <div class="items-wrap">
+        <div class="items-category">
+          <div class="types">
+            <a href="#">野餐籃｜Picnic Basket</a>
+            <a>適合三人以內聚會</a>
+            <a>適合十人內聚會</a>
+            <a>適合十人以上聚會</a>
+          </div>
+          <div class="types">
+            <a>野餐墊｜Picnic Blanket</a>
+            <a>適合三人以內聚會</a>
+            <a>適合十人內聚會</a>
+            <a>適合十人以上聚會</a>
+          </div>
+          <div class="types">
+            <a>適合三人以內聚會</a>
+            <a>適合十人內聚會</a>
+            <a>適合十人以上聚會</a>
+          </div>
+        </div>
+          <div class="items-group">
+          <div class="items">
+            <img src="img/picnic/picnic basket items1.svg" alt="">
+            <div class="popular-item-content">
+              <p>NT 560</p>
+              <p>法式野餐組合</p>
+              
+            </div>
+          </div>
+          <div class="items">
+            <img src="img/picnic/picnic basket items2.svg" alt="">
+            <div class="popular-item-content">
+              <p>NT 560</p>
+              <p>法式野餐組合</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="img/picnic/picnic basket items3.svg" alt="">
+            <div class="popular-item-content">
+              <p>NT 560</p>
+              <p>法式野餐組合</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="img/picnic/picnic basket items4.svg" alt="">
+            <div class="popular-item-content">
+              <p>NT 560</p>
+              <p>法式野餐組合</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="img/picnic/picnic basket items5.svg" alt="">
+            <div class="popular-item-content">
+              <p>NT 560</p>
+              <p>法式野餐組合</p>
+            </div>
+          </div>
+          <div class="items">
+            <img src="img/picnic/picnic basket items6.svg" alt="">
+            <div class="popular-item-content">
+              <p>NT 560</p>
+              <p>法式野餐組合</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <script>
+      function showHideMenu(){
+        let menu = document.getElementById("menu");
+        menu.classList.toggle("hidden");
+      }
+      function init(){
+        document.getElementById("btn-hamburger").onclick=showHideMenu; 
+      }
+       window.addEventListener("load",init)
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue 風格野餐日 - Sunday Afternoon</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.6/swiper-bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="news-detail.css">
+  </head>
+<body>
+  <nav>
+    <div class="nav-bar">
+      <button class="nav-button" id="btn-hamburger"><i  class="fa fa-bars" aria-hidden="true"></i></button>
+      <div class="logo"><a href="index.html"><img src="img/nav/logo.png" alt=""></a></div>
+      <ul class="menu">
+        <a href="index.html"><img src="img/nav/logo.png" alt=""></a>
+        <div class="index-info">
+          <li><a href="picnic.html">野餐專區</a></li>
+          <li><a href="news.html">最新消息</a></li>
+          <li><a href="product.html">商品選購</a></li>
+          <li><a href="information.html">店鋪情報</a></li>
+        </div>
+      </ul>
+
+      <ul class="nav-icons">
+        
+        <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div class="line"></div>
+    <ul id="menu" class="hidden"> 
+      <li><a href="picnic.html">野餐專區</a></li>
+      <li><a href="news.html">最新消息</a></li>
+      <li><a href="product.html">商品選購</a></li>
+      <li><a href="information.html">店鋪情報</a></li>
+    </ul>
+  </nav>
+  <div class="banner"></div>
+  <div class="breadcrumb"><p>Home > 最新消息 > Vogue風格野餐日</p></div>
+  
+  <div class="container">
+    <div class="container-image"><img src="img/news-detail/news-photo.jpg" alt=""></div> 
+    <div class="container-content">
+      <h1>歷年最多美食攤位、金曲等級表演、單身聯誼活動！VOGUE 2021風格野餐日4月底強勢登場，不可不知的超完整亮點一次揭曉</h1>
+      <p class="emphasize">2021.03.27</p>
+      <div class="intoduction">
+        <h2>【活動介紹】</h2>
+        <p>VOGUE 風格野餐日已經舉辦多年，是走時尚風格
+          的野餐活動，當天也會邀請明星、Youtuber等出席，
+          當天也會有市集活動讓大家邊野餐、邊享受時尚美妝的體驗。
+          今年一起搭配Pantone經典藍色和小花裝飾入場，
+          今年的dresscode由我們一起來完成！
+        </p>
+      </div>
+      <div class="location">
+        <h2>【活動地點】</h2>
+        <p>高雄駁二藝術特區</p>
+        <p>(高雄市鹽埕區大勇路1號)</p>
+      </div>
+      <div class="time">
+        <h2>【日期與時間】</h2>
+        <p>6月5日（六）11：00～20：00</p>
+      </div> 
+      <div class="container-icons">
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        <a href="https://twitter.com/login"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+<!-- 活動頁面 -->
+  <div class="other-news">
+    <div class="topic">
+      <div class="wave wave-left"><img src="img/news-detail/ORANGE-WAVE.svg" alt=""></div>
+      <h1>其他消息</h1>
+      <div class="wave wave-right"><img src="img/news-detail/ORANGE-WAVE.svg" alt=""></div>
+    </div>
+    <div class="other-group-wrap"><a href="news-detail.html">
+      <div class="classmate">
+        <img src="img/news-detail/classmate.svg"
+        alt="">
+        <h2>【草地同學會 in 華山文創園區】</h2>
+        <p>2021.04.18</p></a>
+      </div>
+      <div class="family"><a href="news-detail.html">
+        <img src="img/news-detail/family.svg"
+        alt="">
+        <h2>【親子同樂會 in 三重都會公園】</h2>
+        <p>2021.07.15</p></a>
+        </div>
+      <div class="friends"><a href="news-detail.html">
+        <img src="img/news-detail/friends.svg"
+          alt="">
+        <h2>【好朋友野餐日 in 大安森林公園】</h2>
+        <p>2021.09.18</p></a>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="footer-icons">
+      <a href="https://www.instagram.com/"><i class="fa fa-instagram
+        " aria-hidden="true"></i></a>
+      <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    </div>
+    <p>Sunday Afternoon.All Rights Reserved</p>
+  </footer>
+
+  <script>
+   function showHideMenu(){
+     let menu = document.getElementById("menu");
+     menu.classList.toggle("hidden");
+   }
+   function init(){
+     document.getElementById("btn-hamburger").onclick=showHideMenu; 
+   }
+   window.addEventListener("load",init)
+  </script>
+
+</body>
+</html>

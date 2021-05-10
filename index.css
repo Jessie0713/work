@@ -1,0 +1,1045 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+:root{
+  --nav-font-color:rgb(0, 0, 0,0.7);
+  --banner-font-color:#fff;
+  --main-background-color:#F9F3F3;
+  --second-background-color:#2B3852;
+  --third-background-color:#fff;
+  --main-font-color:rgb(0,0,0,0.9);
+  --topic-font-color:#CF4303;
+  --footer-color:#CF4303;
+ 
+}
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+  position: relative;
+  background-color: var(--main-background-color)
+}
+ 
+li{
+list-style: none;
+background-color: var(--main-background-color); 
+} 
+
+nav{
+position: fixed;
+width: 100%;
+z-index: 500;
+}
+
+.nav-bar{
+display: flex;
+justify-content: space-between;
+padding: 10px;
+background-color: var(--main-background-color);  
+}
+
+.menu img{
+width: 120px;
+}
+
+.nav-button,
+.nav-icons{
+display: flex;
+justify-content: center;
+align-items: flex-end;
+color:var(--nav-font-color);
+
+}
+
+.nav-button{
+border: none;
+background-color: var(--main-background-color);
+}
+
+nav .fa-bars{
+font-size: 30px; 
+display: block;
+margin-bottom: 5px;
+text-decoration: none;
+
+}
+
+a{
+text-decoration: none;
+color: var(--nav-font-color);
+}
+
+nav .fa-instagram,
+nav .fa-shopping-bag{
+font-size: 33px; 
+display: block;
+margin-left: 8px;
+margin-bottom: 6px;
+text-decoration: none;
+}
+
+nav .fa-instagram{
+font-weight: 550;
+font-size: 35px;
+margin-bottom: 3px;
+
+}
+
+.line{
+background-color: rgb(0, 0, 0,0.3);
+height: 1px;
+width: 98%;
+margin: auto;
+}
+#menu{
+  position: fixed;
+  width: 100%;
+  background-color: var(--main-background-color);
+  left: 0;
+  top: 70px;
+  transition: 1s left;
+  
+  }
+  
+  #menu.hidden{
+  position: fixed;
+  left:-100%;
+  transition: 1s left;
+  
+  }
+  .menu{
+    display: none;
+
+  }
+  
+  #menu li a{
+  padding: 25px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  color:var(--main-font-color);
+  letter-spacing: 1px;
+  width: 100%;
+  padding-left:39%;
+  }
+  
+  #menu li a:hover{
+  background-color:var(--topic-font-color);
+  color: #fff;
+  }
+  .nav-icons li a:hover{
+    color:var(--topic-font-color)
+   }
+/* nav */
+h1{
+  font-size: 23px;
+  letter-spacing: 9px;
+}
+
+h2{
+  font-size: 18px;
+  color: var(--topic-font-color);
+  letter-spacing:  5px;
+  width: 100%; 
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+  z-index: 100;
+}
+
+p{
+  font-size: 16px;
+  letter-spacing:5px ;
+  line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+.banner-wrap{
+  padding-top:70px;
+}
+.banner {
+ width: 100%;
+ height: 60vh;
+ color: white;
+ background-image: url('img/index/picnic-banner-2.png');
+ background-position: center;
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: flex-end;
+
+}
+.banner-txt{
+margin: 0 auto 20px auto ;
+text-align: center;
+}
+
+.banner p{
+  line-height: 40px;
+  font-size: 18px;
+}
+
+.banner-detail{
+  font-size: 16px;
+  letter-spacing: 5px;
+}
+.banner-topic{
+  font-size: 23px;
+  letter-spacing: 6px;
+
+}
+.banner-topic::after{
+  content:'';
+  margin: 10px auto;
+  background-color:var(--third-background-color);
+  height: 2px;
+  width: 3.5em;
+  display: block;
+} 
+
+/* .banner */
+.picnic-area{
+  padding: 10% 4%;
+  background-color: var(--second-background-color) ;
+}
+.picnic-area p{
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+ 
+}
+
+.picnic-img img{
+  display: block;
+  width: 100%;
+  margin-bottom: 6%;
+  border-radius: 2%;
+
+ 
+}
+
+.picnic-content{
+  background-color: var(--third-background-color);
+  padding: 8% 0;
+  border-radius: 2%;
+}
+.picnic-button,
+.news-button{
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+ border: none;
+  border-bottom: 2px solid var(--topic-font-color);
+  color: var(--topic-font-color);
+  margin: 4% auto auto auto;
+}
+
+
+
+.view-more{
+  height: 29px;
+  width: 29px;
+  background-color: var(--topic-font-color);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+}
+/* hover-effect */
+button:hover{
+  font-weight: bold;
+  color:var(--topic-font-color)
+
+}
+.news-event .news-img-wrap{
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.news-event img{
+  border-radius: 2%;
+}
+
+
+
+.news-event .news-img-wrap img:hover{
+  opacity: 0.8;
+}
+
+.news-event-txt:hover{
+  font-weight: bold;
+}
+.product button:hover{
+  color:white;
+}
+
+
+
+
+
+
+
+/* news */
+.news{
+  padding: 10% 0
+}
+.news-content-wrap{
+  margin: 0 10%; 
+}
+.news p{
+  color: var(--main-font-color);
+}
+
+.topic{
+  text-align: center;
+  margin: 0 0 20px 0;
+  
+}
+
+.topic-english{
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: var(--topic-font-color);
+}
+.hidden-txt{
+  width: 100%; 
+  overflow: hidden;
+  white-space: nowrap; 
+  text-overflow: ellipsis; 
+}
+.news-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10% 0;
+  
+}
+.news-content-txt{
+  width: 85%;
+  margin-right: 20px;
+}
+.to-detail{
+  height: 29px;
+  width: 29px;
+  border: 2px solid rgb(0, 0, 0,0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.to-detail .fa-chevron-right{
+  color:rgb(0, 0, 0,0.6);
+}
+
+.news-event{
+  margin: 8% auto;
+  width: 60%;
+  text-align:center;
+}
+
+.news-event img{
+  width: 100%;
+
+}
+.news-button{
+  background-color: var(--main-background-color);
+  margin-bottom: 10%;
+}
+
+.news-button p span {
+  color: var(--topic-font-color)
+}
+
+.view-more .fa-chevron-right{
+  color: var(--main-background-color)
+}
+.news-detail-btn{
+  border:none;
+  background-color: var(--main-background-color);
+}
+/* hover effect */
+.news-content:hover{
+  padding-left: 20px;
+  
+}
+.news-content-txt:hover p{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  padding-bottom: 5px;
+}
+
+.news-detail-btn:hover .to-detail .fa-chevron-right{
+  color:var(--topic-font-color);
+}
+.news-detail-btn:hover .to-detail{
+  border: 2px solid var(--topic-font-color);
+}
+
+/* news */
+
+.products-wrap{
+  padding: 10% 4%;
+  background-color: #E1DDD1;
+
+}
+
+.product{
+  width: 65%;
+  margin: 5% auto 8% auto;
+  text-align: center;
+  background-color: var(--third-background-color);
+  overflow: hidden;
+  border-radius: 2%;
+}
+.product img{
+  width: 100%;
+}
+
+.move-up p:nth-child(1){
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--topic-font-color);
+  margin-top: -50px;
+
+
+}
+.move-up p:nth-child(2){
+  color:var(--second-background-color);
+  font-weight: bolder;
+  text-decoration: underline ;
+  font-size: 16px;
+  padding: 2% 0 0 0;
+  margin-bottom: 14%;
+}
+
+.hover-content{
+  background-image: url(img/index/wave-background.png);
+  color:var(--third-background-color);
+  font-weight: bolder;
+  padding: 30px 0 20px 0; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: none;
+  background-color: white;
+  margin-top: -6px;
+  
+  
+}
+
+
+.img-padding{
+  overflow: hidden;
+  transition: .5s;
+
+}
+.move-up{
+  position: relative ;
+  transition: .5s;
+ bottom: -70px;
+
+}
+.product:hover .move-up{
+  bottom: 0px;
+}
+.product:hover .img-padding{
+  padding: 10% 15%  28% 15% ;
+  background-color: #fff;
+}
+.hover-content p{
+  color:white;
+
+}
+/* 精選商品 */
+.popular-item h2{
+  position: relative;
+  text-align: center;
+  padding: 2%;
+  top: -35px;
+  width: 35%;
+  background-color: var(--main-background-color);
+  margin: auto;
+}
+
+
+ 
+ 
+ .popular-item{
+   background-color: var(--main-background-color); 
+   padding: 0 0 7% 0;
+ }
+
+ .popular-item h2{
+   font-size: 23px;
+ }
+ .popular-item-content p:nth-child(1){
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--topic-font-color);
+  
+ }
+
+ .popular-item-content p:nth-child(2){
+  color:var(--second-background-color);
+  font-weight: bolder;
+  text-decoration: underline ;
+ }
+
+ .popular-item-img{
+   position: relative;
+   margin: auto;
+   display: block;
+   width: 60%;
+ }
+
+ .popular-item img{
+   width: 100%;
+   margin: auto;
+   display: block;
+ }
+
+ .popular-item-content{
+   position: absolute;
+   text-align: center;
+   top:78%;
+   left:50%;
+   transform: translateX(-50%);
+  
+ }
+
+ .popular-item-button{
+  background-color:var(--main-background-color);
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-bottom: 2px solid var(--topic-font-color);
+  color: var(--topic-font-color);
+ }
+ .swiper-container {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: var(--main-background-color);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.swiper-button-prev,
+.swiper-button-next
+{
+  color: var(--main-font-color);
+ 
+}
+.popular-item-button{
+  margin: auto;
+}
+
+.swiper-2-hidden{
+  display: none;
+}
+.swiper-3-hidden{
+  display: none;
+}
+
+/* 銷售冠軍 */
+ 
+ .shop-info{
+   padding: 10% 4%;
+   background-color: var(--second-background-color);
+ }
+ .map{
+   margin-bottom: 5%;
+ }
+
+.map iframe{
+  width: 100%;
+  left:0;
+  top:0;
+  border-radius: 2%;
+}
+.info-wrap{
+  background-color: #fff;
+  padding: 3% 0 ;
+  border-radius: 2%;
+}
+.info-content{
+  background-color:var(--third-background-color);
+  padding: 2% 4% 3% 4%;
+}
+.info-txt{
+  margin: 3% 0;
+}
+/* loc */
+  
+footer{
+  text-align: center;
+  padding: 10px 0;
+  background-color: var(--footer-color);
+}
+.footer-icons{
+  display: flex;
+  justify-content: center;
+}
+footer p{
+  color:#fff;
+  font-size: 16px;
+}
+.footer-icons i{
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1.5px solid #fff ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+}
+.footer-icons .fa{
+  font-size: 22px;
+  color:#fff 
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav-button{
+    display: none;
+  }
+  .logo{
+    display: none;
+  }
+  .nav-bar{
+    padding: 10px 30px 5px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+  .menu{
+    display: flex;
+  }
+  
+  .index-info{
+    display: flex;
+    align-items: flex-start;
+    margin-left:6px;
+    font-size: 18px;
+    letter-spacing: 2px;
+  
+    
+  }
+  .index-info li{
+    margin: 18px 15px 5px  15px;
+    color: black;
+  }
+  .index-info li a{
+    color:var(--main-font-color);
+    font-weight: bold;
+  }
+  .index-info li:hover{
+    color: var(--topic-font-color);
+  }
+  .index-info li a:hover{
+    color: var(--topic-font-color);
+  }
+  .index-info li:after{
+    content: "";
+    height: 2px;
+    width: 0;
+    display: block;
+    left: 0px;
+    transition: 0.5s;
+    margin-top: 1px;
+    
+   
+  
+   
+  }
+  
+  .index-info li:hover::after{
+    width: 100%;
+    background-color: var(--topic-font-color);
+  }
+  .nav-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: 7px
+  }
+  .nav-icons .fa-instagram{
+    font-size: 31px;
+  }
+  .nav-icons .fa-shopping-bag{
+    font-size: 29px ;
+  }
+  /* nav-transform */
+ 
+  .picnic-area{
+    display: flex;
+    margin: auto;
+    padding: 6% 3%;
+  }
+  .picnic-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right:2%;
+    width: 50%;;
+
+  }
+  .picnic-img img{
+    margin: 0;
+
+  } 
+  .picnic-img img:nth-child(1){
+    margin-bottom: 4%;
+  }
+  .picnic-content{
+    width: 50%;
+  }
+  .news-event-wrap{
+    display: flex;
+    
+  }
+  .news-event{
+    margin: 3% 0 0 0;
+    flex:1;
+    min-width: 0;
+    
+  }
+  .news{
+    padding: 6% 0 0 0;
+  }
+ 
+  .news-event img{
+   width: 90%;
+  }
+
+
+
+
+
+  .products-wrap{
+    padding: 5% auto;
+  }
+  .product-group{
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    position: relative;
+    height: 340px;
+    left:50%;
+    transform: translateX(-50%);
+    margin-bottom: 5%;
+  }
+  .product{
+    width: 30%;
+    position: absolute;
+  }
+  .move{
+    left: 0;
+  }
+
+  .move1{
+    right: 0;
+  }
+  .move2{
+    left:50%;
+    transform: translateX(-50%);
+    
+  }
+  .shop-info{
+    padding: 5% 3%;
+  }
+  .info-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3% 2%;
+  
+  }
+  .map{
+    width: 50%;
+    padding:0
+  }
+  .info-content{
+    padding: 0 2%;
+    width: 50%;;
+  }
+
+  .info-txt p{
+    font-size: 18px;
+
+  }
+
+  .info-text-group{
+    margin: 10% 0 0 10%;
+  }
+
+ .info-text-group div:nth-child(1){
+   margin: 15% 0;
+   
+ }
+
+ /* 熱銷商品 */
+
+ .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-1-hidden{
+  display: none;
+}
+.swiper-slide{
+  display: flex;
+ 
+}
+.popular-item-img{
+  margin: 6%;
+}
+.popular-item{
+  margin-top: 0%;
+}
+.swiper-container{
+  margin-top: -10%;
+  padding-bottom: 5%;
+}
+.swiper-2-hidden{
+  display: block                             ;
+}
+
+
+
+
+
+
+
+
+
+ 
+@media screen and (min-width: 980px){
+
+  .topic h1:nth-child(1){
+    font-size: 60px;
+  }
+  
+  h1{
+    font-size: 30px;
+  }
+
+  .picnic-area-wrap{
+    background-color: var(--second-background-color);
+  }
+  .picnic-area{
+    max-width: 1080px;
+    padding: 5% 0;
+  }
+  .pinic-content{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .picnic-content p{
+    font-size: 20px;
+    line-height: 60px;
+    letter-spacing: 6px;
+  }
+
+  .banner-txt p:nth-child(1){
+    font-size: 22px;
+    letter-spacing: 5px; 
+  }
+  .banner-txt p{
+    font-size: 20px;
+    letter-spacing: 8px;
+    line-height: 40px; 
+  }
+  .banner-topic::after{
+    width: 5em;
+  }
+  .news{
+    max-width: 1280px;
+    margin:auto;
+    padding: 5% 3%
+  }
+  .news-content-txt h2{
+    font-size: 24px;
+  }
+  .news-button,
+  .popular-item-button {
+    margin-bottom:3%;
+  }
+  .news-button p,
+  .popular-item-button p{
+    font-size: 20px;
+  }
+  .product-group{
+    margin-bottom: 15%;
+  }
+  .products-wrap{
+    padding:4% 0;
+    max-width: 1280px;
+    height: 143vh;
+    margin: auto;
+  }
+  .product-background{
+    background-color:#E1DDD1 ;
+  }
+
+  .info-wrap{
+    max-width: 1280px;
+    margin: auto;
+  }
+  .map{
+    margin-right: 3%;
+  }
+
+  /* 熱銷商品 */
+
+  
+  .popular-item h2{
+    position: relative;
+    top: 0;
+    text-align: center;
+    width: 220px;
+    top: -50px ;
+    padding-top: 0.5%;
+
+
+    
+  }
+
+ 
+}
+
+@media screen and (min-width: 1150px){
+.banner p{
+  line-height: 50px;
+  
+}
+
+
+  /* banner */
+  .info-content p{
+    font-size: 18px;
+    line-height: 40px;
+  } 
+
+  .info-text-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 0 9%;
+  }
+
+
+ .info-text-group div:nth-child(1){
+   margin: 0 0;
+ }
+ .info-wrap{
+   padding-bottom: 3%;
+ }
+ .map{
+   margin: auto;
+ }
+ .info-content p:nth-child(1){
+  font-size: 19px;
+  font-weight: bolder;
+}
+
+.info-content{
+  margin: auto;
+}
+
+/* .news */
+
+.news-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0 3% 0;
+  
+}
+.news{
+  padding: 3% 0;
+}
+.news-content-wrap{
+  margin: 3% 0;
+}
+.news-event{
+  margin:3% 0;
+}
+.news-button,
+.picnic-button,
+.popular-item-button{
+
+  margin:0 auto 0 auto;
+  padding: 0 0 1% 0;
+}
+.swiper-2-hidden{
+  display: none;
+}
+.swiper-3-hidden{
+  display: block;
+}
+.swiper-container{
+  margin-top: 0;
+  padding-bottom:0;
+  padding-top: 0;
+  margin-top: -60px;
+  width: 100%;
+  
+}
+.popular-item-img{
+  margin: 5.5%;
+}
+.popular-item-content p:nth-child(2){
+  margin-top:-5px
+}
+.popular-item{
+  padding: 0 0 3% 0;
+}
+
+
+}
