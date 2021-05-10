@@ -460,6 +460,10 @@ button:hover{
   color:white;
 
 }
+
+.product-group{
+  margin-bottom: 10%
+}
 /* 精選商品 */
 .popular-item h2{
   position: relative;
