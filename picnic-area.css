@@ -218,17 +218,19 @@ p{
   color:var(--main-font-color);
   font-weight: bold;
 }
-.category li + li:before {
+
+.category li + li a:before {
   content: "";
   display: block;
-  height: 1.3em;
+  height: 1em;
   width: 2px;
   background-color:var(--main-font-color);
   position: absolute;
   top: 0;
   bottom: 0;
-  margin: auto;
+ margin: auto -10px;
 }
+
 
 .category li a:hover{
   color: var(--topic-font-color);
