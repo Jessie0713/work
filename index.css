@@ -625,6 +625,7 @@ footer{
 footer p{
   color:#fff;
   font-size: 16px;
+  letter-spacing: 0;
 }
 .footer-icons i{
   height: 30px;
