@@ -768,7 +768,7 @@ footer p{
     width: 90%;
     flex-wrap: wrap;
     position: relative;
-    height: 340px;
+    height: 280px;
     left:50%;
     transform: translateX(-50%);
     margin-bottom: 5%;
