@@ -394,7 +394,7 @@ button:hover{
 }
 
 .product{
-  width: 65%;
+  width:65%;
   margin: 5% auto 8% auto;
   text-align: center;
   background-color: var(--third-background-color);
@@ -569,7 +569,9 @@ button:hover{
 .swiper-button-prev,
 .swiper-button-next
 {
+ display: none;
   color: var(--main-font-color);
+  
  
 }
 .popular-item-button{
@@ -768,7 +770,7 @@ footer p{
     width: 90%;
     flex-wrap: wrap;
     position: relative;
-    height: 280px;
+    height: 300px;
     left:50%;
     transform: translateX(-50%);
     margin-bottom: 5%;
@@ -783,6 +785,7 @@ footer p{
 
   .move1{
     right: 0;
+  
   }
   .move2{
     left:50%;
@@ -920,13 +923,11 @@ footer p{
     font-size: 20px;
   }
   .product-group{
-    margin-bottom: 15%;
+    height: 350px;
   }
-  .products-wrap{
-    padding:4% 0;
-    max-width: 1280px;
-    height: 143vh;
-    margin: auto;
+  .product{
+    width: 25%;
+  
   }
   .product-background{
     background-color:#E1DDD1 ;
@@ -1022,6 +1023,12 @@ footer p{
   margin:0 auto 0 auto;
   padding: 0 0 1% 0;
 }
+
+/* popular item */
+.product-group{
+  height: 450px;
+}
+
 .swiper-2-hidden{
   display: none;
 }
@@ -1045,6 +1052,8 @@ footer p{
 .popular-item{
   padding: 0 0 3% 0;
 }
+
+
 
 
 }
